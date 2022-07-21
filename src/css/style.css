@@ -99,9 +99,10 @@ nav{
     border-radius: 5px;
     color: #6f707e;
     font-size: 12px;
-    padding: 0px 12px 0px 34px;
+    padding: 0px 12px 0px 30px;
     margin-top: 39px;
     background: url(../img/download.png) left no-repeat;
+    background-position: 5% 50%;
 }
 
 .whatcan{
@@ -232,6 +233,9 @@ nav{
     height: 57px;
     background: #eee;
     margin-bottom: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .sum h4{
@@ -299,8 +303,9 @@ nav{
 }
 
 .dot {
-    text-align: center;
-
+    display: block;
+    width: 100%;
+    padding-left: 304px;
 }
 .dot img{
     float: left;
