@@ -13,7 +13,6 @@ nav{
     font-size: 28px;
     color: #fff;
     line-height: 60px;
-    padding-left: 260px;
     float: left;
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
@@ -22,7 +21,6 @@ nav{
 
 .menu{
     float: left;
-    padding-left: 280px;
 }
 
 .menu li{
@@ -31,7 +29,7 @@ nav{
     color: #fff;
     margin-right: 40px;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 14px;
     -webkit-animation: topshift 0.4s ease forwards;
     -o-animation: topshift 0.4s ease forwards;
     animation: topshift 0.4s ease forwards;
@@ -43,6 +41,7 @@ nav{
     color: white;
     display: inline-block;
     transform: scale(1);
+    text-decoration: none;
 }
 
 .menu li a:visited{
@@ -90,20 +89,20 @@ main{
 
 .title__container{
     float: left;
-    margin: 280px 0px 0px 300px;
     text-align: center;
     color: #2c384a;
+    width: 100%;
     opacity: 0;
     -webkit-animation: titlemove 1s ease forwards;
     -o-animation: titlemove 1s ease forwards;
     animation: titlemove 1s ease forwards;
     -webkit-animation-delay: 2.2s;
     -o-animation-delay: 2.2s;
-    animation-delay: 2.2s;
+    animation-delay: 2.2s; 
 }
 
 .title__container h1{
-    font-size: 60px;
+    font-size: 72px;
     font-weight: bold;
 }
 
@@ -140,43 +139,44 @@ main{
     transform: scale(1.1);
 }
 
-.about{
-    width: 720px;
-    margin: 0 auto;
-    text-align: center;
+.white-btn:visited{
+    color: white;
 }
 
-.about img{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 95px;
-    display: block; 
-    -webkit-animation: comming 4s ease forwards;
-    -o-animation: comming 4s ease forwards;
-    animation: comming 4s ease forwards;
-}
-
-.about h2{
-    width: 100%;
+.about__container h2{
     font-size: 25px;
     color: #263244;
-    margin-top: 109px;
-    text-align: center;
+    margin: 109px 0 30px;
     -webkit-animation: h2 2s ease forwards;
     -o-animation: h2 2s ease forwards;
     animation: h2 2s ease forwards;
 }
 
-.about p{
+.about__container hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 0 auto 60px;
+    opacity: 1;
+}
+
+.about__container img{
+    -webkit-animation: comming 4s ease forwards;
+    -o-animation: comming 4s ease forwards;
+    animation: comming 4s ease forwards;
+}
+
+.about__container p{
     margin-top: 25px;
     text-align: left;
-     position: relative;
+     position: relative;    
     -webkit-animation: p 2s ease forwards;
     -o-animation: p 2s ease forwards;
     animation: p 2s ease forwards;
 }
 
-.about input{
+.about__container input{
     height: 32px;
     text-align: right;
     border: 2px solid #6f707e;
@@ -186,11 +186,12 @@ main{
     font-size: 12px;
     padding: 0px 12px 0px 30px;
     margin-top: 39px;
+    margin-bottom: 90px;
     background: url(../img/download.png) left no-repeat;
     background-position: 5% 50%;
 }
 
-.about input:hover{
+.about__container input:hover{
     transition: all 0.2s;
     transform: scale(1);
     background: url(../img/download1.png) left no-repeat #344051;
@@ -198,43 +199,57 @@ main{
     color: white;
 }
 
-.about input:active{
+.about__container input:active{
     transform: scale(1.1);
 }
 
 .whatcan{
-    width: 100%;
-    height: 520px;
     background: url(../img/whatcan.jpg) fixed center/cover no-repeat;
 }
 
 .whatcan_conteiner{
-    width: 920px;
-    margin: 0 auto;
+    padding-top: 110px;
+    padding-bottom: 96px;
 }
 
-.whatcan h2{
-    width: 100%;
+.whatcan_conteiner h2{
     font-size: 25px;
     color: #263244;
-    margin-top: 109px;
-    padding-top: 109px;
+    margin: 0px auto 30px;
     text-align: center;
     -webkit-animation: h2 2s ease forwards;
     -o-animation: h2 2s ease forwards;
     animation: h2 2s ease forwards;
 }
 
+.whatcan_conteiner hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 0 auto 60px;
+    opacity: 1;
+}
+
 .whatcan_item{
     float: left;
-    width: 230px;
-    text-align: center;
     margin-top: 145px;
     position: relative;
     -webkit-animation: p 2s ease forwards;
     -o-animation: p 2s ease forwards;
     animation: p 2s ease forwards;
     opacity: 0;
+}
+
+.whatcan_item img{
+    margin-bottom: 40px;
+    height: 40px;
+}
+
+.whatcan_item h3{
+    color: #cf7600;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .whatcan_item:nth-child(1){
@@ -254,50 +269,61 @@ main{
 }
 }
 
-.clear{
-    clear: left;
-}
-
-.whatcan_item h3{
-    color: #cf7600;
-    font-weight: bold;
-    margin-top: 35px;
-    margin-bottom: 20px;
-}
-
-.case{
+.case__conteiner{
     text-align: center;
 }
 
-.case h2{
-    width: 100%;
+.case__conteiner h2{
     font-size: 25px;
     color: #263244;
     margin-top: 109px;
-    padding-bottom: 73px;
+    padding-bottom: 30px;
     text-align: center;
     -webkit-animation: h2 2s ease forwards;
     -o-animation: h2 2s ease forwards;
     animation: h2 2s ease forwards;
 }
 
+.case__conteiner hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 0 auto 60px;
+    opacity: 1;
+}
+
 .slide{
-    width: 1170px;
-    margin: 0 auto;
     padding-top: 43px;
 }
 
 .slide_item{
-    width: 180px;
     float: left;
     margin: 40px auto;
-    margin-right: 100px;
 }
 
 .slide_item h3{
-    float: left;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.slide_item p{
+    font-size: 17px;
+    margin: 16px 0;
+}
+
+.slide_item1 {
+    margin: 40px;
+}
+
+.slide_item1 h3{
+    text-align: left;
     font-weight: bold;
-    margin-bottom: 10px;
+}
+
+.slide_item1 p{
+    text-align: left;
+    padding-top: 15px;
 }
 
 .slide_item input{
@@ -319,11 +345,6 @@ main{
     transform: scale(0.98);
 }
 
-.slide_item p{
-    text-align: left;
-    margin: 25px 0px 20px 0px;
-}
-
 .slide_item a:link{
     color: blue;
 }
@@ -332,32 +353,12 @@ main{
     color: #755fdb;
 }
 
-.clear{
-    clear:left;
-}
-
-.slide_item1 {
-    width: 848px;
-    margin: 40px;
-}
-.slide_item1 h3{
-    text-align: left;
-    font-weight: bold;
-}
-
-.slide_item1 p{
-    text-align: left;
-    padding-top: 15px;
-}
-
 .price {
-    width: 800px;
-    margin: 0 auto;
-    padding-top: 43px;
+   padding-top: 110px;
+    padding-bottom: 96px;
 }
 
-.price h2{
-    width: 100%;
+.price__conteiner h2{
     font-size: 30px;
     font-weight: bold;
     color: #263244;
@@ -369,20 +370,15 @@ main{
     animation: h2 2s ease forwards;
 }
 
-.price h3{
-    width: 100%;
+.price__conteiner h3{
     font-size: 20px;
     margin-bottom: 23px;
 }
 
-.mySelect{
-    width: 100%;
-    height: 55px;
+.form-select{
+    height: 50px;
     background: #eee;
     margin-bottom: 40px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
 }
 
 .sum h4{
@@ -391,16 +387,16 @@ main{
 }
 
 .stat {
-    width: 100%;
-    height: 500px;
     background: url(../img/bg_stat.jpg) fixed center/cover no-repeat;
 }
 
-.stat h2{
-    width: 100%;
+.stat__conteiner{
+    padding-bottom: 96px;
+}
+
+.stat__conteiner h2{
     font-size: 25px;
     color: #263244;
-    margin-top: 109px;
     padding-top: 109px;
     text-align: center;
     -webkit-animation: h2 2s ease forwards;
@@ -408,14 +404,17 @@ main{
     animation: h2 2s ease forwards;
 }
 
-.stat_conteiner {
-    width: 920px;
-    margin: 0 auto;
+.stat__conteiner hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 30px auto 60px;
+    opacity: 1;
 }
 
 .stat_item{
     float: left;
-    width: 230px;
     text-align: center;
     margin-top: 145px;
     position: relative;
@@ -423,6 +422,10 @@ main{
     -o-animation: p 2s ease forwards;
     animation: p 2s ease forwards;
     opacity: 0;
+}
+
+.stat_conteiner {
+    margin: 0 auto;
 }
 
 .stat_item:nth-child(1){
@@ -451,13 +454,13 @@ main{
     animation: h3 2s ease forwards;
 }
 
-.review{
-    width: 720px;
+.review__conteiner{
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 92px;
 }
 
-.review h2{
+.review__conteiner h2{
     width: 100%;
     font-size: 25px;
     color: #263244;
@@ -468,41 +471,42 @@ main{
     animation: h2 2s ease forwards;
 }
 
+.review__conteiner hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 30px auto 60px;
+    opacity: 1;
+}
+
 .review img{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 95px;
     display: block;
     -webkit-animation: comming 3s ease forwards;
     -o-animation: comming 3s ease forwards;
     animation: comming 3s ease forwards;
 }
 
-.review p{
+.blockquote p{
+    margin-top: 35px;
+}
+
+.blockquote-footer {
     margin-top: 40px;
     -webkit-animation: p 3s ease forwards;
     -o-animation: p 3s ease forwards;
     animation: p 3s ease forwards;
 }
 
-.dot {
-    display: block;
-    width: 100%;
-    padding-left: 304px;
-}
 .dot img{
     float: left;
-    padding-left: 19px;
     margin-top: 54px;
 }
 
 .contacts{
-    width: 100%;
-    height: 800px;
     background: url(../img/bg_contacts.jpg) center/cover no-repeat;
 }
-.contacts h2{
-    width: 100%;
+.contacts__conteiner h2{
     font-size: 25px;
     color: white;
     margin-top: 109px;
@@ -513,7 +517,7 @@ main{
     animation: h2 2s ease forwards;
 }
 
-.contacts p{
+.contacts__conteiner p{
     text-align: center;
     margin-top: 50px;
     color: white;
@@ -522,21 +526,24 @@ main{
     animation: p 3s ease forwards;
 }
 
-.contacts_conteiner{ 
-    width: 600px;
-    margin: 0 auto;
+.contacts__conteiner hr{
+    height: 4px;
+    border: none;
+    background: #d17700;
+    width: 80px;
+    margin: 30px auto 60px;
+    opacity: 1;
 }
 
 .contacts_item{
     float: left;
-    width: 200px;
+    width: 154px;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin-top: 30px;
 }
 
 .contacts_item p {
-    margin-top: 17px;
+    margin-top: 15px;
 }
 
 .answer h3{
@@ -598,6 +605,13 @@ main{
     padding: 0px 16px;
     margin: 58px 14px 0px 14px;
 }
+/*
+
+
+
+
+
+
 
 .send input:hover{
     background: #344051;
@@ -644,7 +658,7 @@ footer{
     height: 60px;
     background: #344051;
 }
-
+*/
 @keyframes topshift{
     from{
         opacity: 0;
@@ -672,7 +686,7 @@ footer{
     }
     to{
         opacity: 1;
-        margin-left: 300px;
+        margin-left: 0px;
     }
 }
 
@@ -706,5 +720,33 @@ footer{
     to{
         opacity: 1;
         left: 0;
+    }
+}
+
+@media (max-width: 991px){
+    .title__container, .title__container h4, .title__container input{
+        color: white;
+        position: relative;
+        z-index: 3;
+    }
+    
+    .title__container input{
+        border: 2px solid #fff;
+    
+    }
+    
+    .main{
+        position: relative;
+    }
+    
+    .main:after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.4);
+        z-index: 1;
     }
 }
