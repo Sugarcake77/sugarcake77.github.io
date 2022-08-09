@@ -207,12 +207,12 @@ main{
     background: url(../img/whatcan.jpg) fixed center/cover no-repeat;
 }
 
-.whatcan_conteiner{
+.whatcan_container{
     padding-top: 110px;
     padding-bottom: 96px;
 }
 
-.whatcan_conteiner h2{
+.whatcan_container h2{
     font-size: 25px;
     color: #263244;
     margin: 0px auto 30px;
@@ -222,7 +222,7 @@ main{
     animation: h2 2s ease forwards;
 }
 
-.whatcan_conteiner hr{
+.whatcan_container hr{
     height: 4px;
     border: none;
     background: #d17700;
@@ -269,11 +269,11 @@ main{
 }
 }
 
-.case__conteiner{
+.case__container{
     text-align: center;
 }
 
-.case__conteiner h2{
+.case__container h2{
     font-size: 25px;
     color: #263244;
     margin-top: 109px;
@@ -284,7 +284,7 @@ main{
     animation: h2 2s ease forwards;
 }
 
-.case__conteiner hr{
+.case__container hr{
     height: 4px;
     border: none;
     background: #d17700;
@@ -358,7 +358,7 @@ main{
     padding-bottom: 96px;
 }
 
-.price__conteiner h2{
+.price__container h2{
     font-size: 30px;
     font-weight: bold;
     color: #263244;
@@ -370,7 +370,7 @@ main{
     animation: h2 2s ease forwards;
 }
 
-.price__conteiner h3{
+.price__container h3{
     font-size: 20px;
     margin-bottom: 23px;
 }
@@ -390,11 +390,11 @@ main{
     background: url(../img/bg_stat.jpg) fixed center/cover no-repeat;
 }
 
-.stat__conteiner{
+.stat__container{
     padding-bottom: 96px;
 }
 
-.stat__conteiner h2{
+.stat__container h2{
     font-size: 25px;
     color: #263244;
     padding-top: 109px;
@@ -404,7 +404,7 @@ main{
     animation: h2 2s ease forwards;
 }
 
-.stat__conteiner hr{
+.stat__container hr{
     height: 4px;
     border: none;
     background: #d17700;
@@ -454,13 +454,13 @@ main{
     animation: h3 2s ease forwards;
 }
 
-.review__conteiner{
+.review__container{
     margin: 0 auto;
     text-align: center;
     padding-bottom: 92px;
 }
 
-.review__conteiner h2{
+.review__container h2{
     width: 100%;
     font-size: 25px;
     color: #263244;
@@ -471,7 +471,7 @@ main{
     animation: h2 2s ease forwards;
 }
 
-.review__conteiner hr{
+.review__container hr{
     height: 4px;
     border: none;
     background: #d17700;
@@ -506,7 +506,7 @@ main{
 .contacts{
     background: url(../img/bg_contacts.jpg) center/cover no-repeat;
 }
-.contacts__conteiner h2{
+.contacts__container h2{
     font-size: 25px;
     color: white;
     margin-top: 109px;
@@ -517,7 +517,7 @@ main{
     animation: h2 2s ease forwards;
 }
 
-.contacts__conteiner p{
+.contacts__container p{
     text-align: center;
     margin-top: 50px;
     color: white;
@@ -526,7 +526,7 @@ main{
     animation: p 3s ease forwards;
 }
 
-.contacts__conteiner hr{
+.contacts__container hr{
     height: 4px;
     border: none;
     background: #d17700;
