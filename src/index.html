@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
-
+    <div id="preloader" class="visible"></div>
+    
     <header>
         <nav>
             <div class="container">
@@ -22,12 +24,12 @@
                     <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
                         <div class="menu">
                             <ul>
-                                <li><a href="#">Обо мне</a></li>
-                                <li><a href="#">Услуги</a></li>
-                                <li><a href="#">Кейсы</a></li>
-                                <li><a href="#">Прайс</a></li>
-                                <li><a href="#">Отзывы</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#about">Обо мне</a></li>
+                                <li><a href="#whatcan">Услуги</a></li>
+                                <li><a href="#case">Кейсы</a></li>
+                                <li><a href="#price">Прайс</a></li>
+                                <li><a href="#review">Отзывы</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -37,12 +39,12 @@
                                 Menu
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Обо мне</a></li>
-                                <li><a class="dropdown-item" href="#">Услуги</a></li>
-                                <li><a class="dropdown-item" href="#">Кейсы</a></li>
-                                <li><a class="dropdown-item" href="#">Прайс</a></li>
-                                <li><a class="dropdown-item" href="#">Отзывы</a></li>
-                                <li><a class="dropdown-item" href="#">Контакты</a></li>
+                                <li><a class="dropdown-item" href="#about">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#whatcan">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#case">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#price">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#review">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#contacts">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -66,7 +68,7 @@
             </div>
         </section>
         
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__container container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-6 col-md-3 text-center">
@@ -90,7 +92,7 @@
             </div>
         </section>
         
-        <section class="whatcan">
+        <section class="whatcan" id="whatcan">
             <div class="whatcan_container container">
                 <h2>ЧТО Я УМЕЮ</h2>
                 <hr>
@@ -119,7 +121,7 @@
             </div>
         </section>
         
-        <section class="case">
+        <section class="case" id="case">
             <div class="case__container container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-10 col-md-9 col-lg-8 text-center">
@@ -152,7 +154,7 @@
             </div>
         </section>
         
-        <section class="price">
+        <section class="price" id="price">
             <div class="price__container container">
                 <div class="row justify-content-center text-center">
                     <div class="col-10">
@@ -163,29 +165,39 @@
                     <div class="col-10">
                         <form action="#">
                             <h3>ТИП САЙТА</h3>
-                            <select class="form-select" aria-label="Default select example">
-                                <option disabled selected>Выберите пункт...</option>
-                                <option value="Лэндинг">Лэндинг</option>
-                                <option value="Интернет-магазин">Интернет-магазин</option>
-                                <option value="Сайт-визитка">Сайт-визитка</option>
-                                <option value="Корпоративный сайт">Корпоративный сайт</option>
+                            <select id="select1" class="form-select" aria-label="Default select example">
+                                <option value="0" days="0" disabled selected>Выберите пункт...</option>
+                                <option value="1000" days="1">Лэндинг</option>
+                                <option value="2000" days="2">Интернет-магазин</option>
+                                <option value="3000" days="3">Сайт-визитка</option>
+                                <option value="5000" days="4">Корпоративный сайт</option>
                             </select>
                             <h3>ДИЗАЙН</h3>
-                            <select class="form-select" aria-label="Default select example">
-                                <option disabled selected>Выберите пункт...</option>
-                                <option value="des1">Дизайн1</option>
-                                <option value="des2">Дизайн2</option>
+                            <select id="select2" class="form-select" aria-label="Default select example">
+                                <option value="0" days="0" disabled selected>Выберите пункт...</option>
+                                <option value="3000" days="1">Шаблонный</option>
+                                <option value="4000" days="2">Уникальный</option>
+                                <option value="5000" days="3">WOW-дизайн</option>
                             </select>
                             <h3>АДАПТИВНОСТЬ</h3>
-                            <select class="form-select" aria-label="Default select example">
-                                <option disabled selected>Выберите пункт...</option>
-                                <option value="adap1">Мобильная</option>
-                                <option value="adap2">Десктопная</option>
-                                <option value="adap3">Оба варианта</option>
+                            <select id="select3" class="form-select" aria-label="Default select example">
+                                <option value="0" days="0" disabled selected>Выберите пункт...</option>
+                                <option value="2000" days="1">Мобильная</option>
+                                <option value="3000" days="2">Десктопная</option>
+                                <option value="4000" days="3">Оба варианта</option>
                             </select>
-                            <div class="sum">
-                                <h4>Сроки</h4>
-                                <h4>Стоимость</h4>
+                            <hr>
+                            <div class="calc">
+                               <div class="days">
+                                   <p class="text">Сроки</p>
+                                   <p class="digit">0</p>
+                                   <div class="clear"></div>
+                               </div>
+                               <div class="stoimost">
+                                   <p class="text">Стоимость</p>
+                                   <p class="digit">0</p>
+                                   <div class="clear"></div>
+                               </div>
                             </div>
                         </form>
                     </div>
@@ -200,29 +212,29 @@
                 <div class="row justify-content-center text-center">
                     <div class="stat_item col-12 col-sm-6 col-md-3 mt-5 mt-sm-0">
                         <img src="img/smile.png" alt="">
-                        <h3>120</h3>
+                        <h3 class="count" data-value="120">120</h3>
                         <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
                     </div>
                     <div class="stat_item col-12 col-sm-6 col-md-3 mt-5 mt-sm-0">
                         <img src="img/skobki.png" alt="">
-                        <h3>4,600</h3>
+                        <h3 class="count" data-value="4,600">4,600</h3>
                         <p>ЧАСОВ РАБОТЫ</p>
                     </div>
                     <div class="stat_item col-12 col-sm-6 col-md-3 mt-5 mt-md-0">
                         <img src="img/profit.png" alt="">
-                        <h3>340</h3>
+                        <h3 class="count" data-value="340">340</h3>
                         <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
                     </div>
                     <div class="stat_item col-12 col-sm-6 col-md-3 mt-5 mt-md-0">
                         <img src="img/cup.png" alt="">
-                        <h3>23</h3>
+                        <h3 class="count" data-value="23">23</h3>
                         <p>НАГРАД ПОЛУЧЕНО</p>
                     </div>
                 </div>
             </div>
         </section>
         
-        <section class="review">
+        <section class="review" id="review">
             <div class="review__container container">
                 <div class="row justify-content-center">
                     <div class="col-12 ol-sm-6 col-md-3 text-center">
@@ -257,7 +269,7 @@
             </div>
         </section>
 
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="contacts__container container justify-content-center">
                 <h2>МОИ КОНТАКТЫ</h2>
                 <hr>
@@ -309,7 +321,7 @@
                 </div>
             </div>
 
-            <!--       <div class="row justify-content-center">
+<!--         <div class="row justify-content-center">
             <div class="col-md-5 pb-2">
                  <div class="social">
                    <img src="img/fb.png" alt="">
@@ -329,8 +341,10 @@
 
         <footer>Copyright 2022 Александр Design by Web</footer>
     </main>
-    <script src="js/myScript.js"></script>
+    <script src="js/jQuery-v3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/myScript.js"></script>
 </body>
 
 </html>

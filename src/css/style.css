@@ -1,6 +1,30 @@
 body{
     font-family: Arial, sans-serif;
 }
+
+#preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 999;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background: #fbfbfb url('../img/settings.gif') no-repeat center center;
+}
+    
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
 nav{
     width: 100%;
     height: 60px;
@@ -381,9 +405,32 @@ main{
     margin-bottom: 40px;
 }
 
-.sum h4{
+.calc h4{
     text-align: left;
     margin: 15px auto;
+}
+
+.days, .stoimost{
+    margin-bottom: 0px;
+    font-size: 21px;
+}
+
+.calc p{
+    margin-bottom: 0px;
+}
+
+.calc .text{
+    float: left;
+    text-align: left;
+}
+
+.calc .digit{
+    font-size: 29px;
+    float: right;
+}
+
+.clear{
+    clear:both;
 }
 
 .stat {
