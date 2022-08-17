@@ -68,6 +68,10 @@ nav{
     text-decoration: none;
 }
 
+.menu li a.active{
+    color: brown;
+}
+
 .menu li a:visited{
     color: white;
 }

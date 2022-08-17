@@ -10,16 +10,24 @@ $(document).ready(function () {
         calculate();
     });
     calculate();
-});
-
-$('.count').each(function () {
-    $(this).prop('Counter', 0).animate({
-            Counter: $(this).data('value')
-        }, {
-        duration: 1000,
-        easing: 'swing',
-        step: function (now) {                      
-            $(this).text(this.Counter.toFixed(2));
-        }
+    
+    $(window).scroll(() => {
+        let scrollDistance = $(window).scrollTop();
+        
+        $('.section').each((i, el) => {
+            if ($(el).offset().top - $('nav').outerHeight() <= scrollDistance) {
+                $('nav a').each((i, el) => {
+                    if ($(el).hasClass('active')) {
+                        $(el).removeClass('active');
+                    }
+                });
+                $('nav li:eq(' + i + ')').find('a').addClass('active');
+            }
+        });
     });
 });
+
+
+
+
+

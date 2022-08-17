@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
 </head>
 
 <body>
     <div id="preloader" class="visible"></div>
-    
+
     <header>
         <nav>
             <div class="container">
@@ -24,12 +24,12 @@
                     <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
                         <div class="menu">
                             <ul>
-                                <li><a href="#about">Обо мне</a></li>
-                                <li><a href="#whatcan">Услуги</a></li>
-                                <li><a href="#case">Кейсы</a></li>
-                                <li><a href="#price">Прайс</a></li>
-                                <li><a href="#review">Отзывы</a></li>
-                                <li><a href="#contacts">Контакты</a></li>
+                                <li><a href="#about" class="scroll">Обо мне</a></li>
+                                <li><a href="#whatcan" class="scroll">Услуги</a></li>
+                                <li><a href="#case" class="scroll">Кейсы</a></li>
+                                <li><a href="#price" class="scroll">Прайс</a></li>
+                                <li><a href="#review" class="scroll">Отзывы</a></li>
+                                <li><a href="#contacts" class="scroll">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -67,8 +67,8 @@
                 </div>
             </div>
         </section>
-        
-        <section class="about" id="about">
+
+        <section class="about section">
             <div class="about__container container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-6 col-md-3 text-center">
@@ -91,8 +91,8 @@
 
             </div>
         </section>
-        
-        <section class="whatcan" id="whatcan">
+
+        <section class="whatcan section">
             <div class="whatcan_container container">
                 <h2>ЧТО Я УМЕЮ</h2>
                 <hr>
@@ -120,8 +120,8 @@
                 </div>
             </div>
         </section>
-        
-        <section class="case" id="case">
+
+        <section class="case section">
             <div class="case__container container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-10 col-md-9 col-lg-8 text-center">
@@ -131,10 +131,26 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <div class="row align-items-center">
-                        <div class="col-12">
-                            <img src="img/foto.jpg" class="img-fluid d-block mx-auto" alt="">
+                    <div id="carouselExampleControls" class="carousel slide row align-items-center" data-bs-ride="carousel">
+                        <div class="carousel-inner col-12">
+                            <div class="carousel-item active">
+                                <img src="img/foto.jpg" class="d-block mx-auto" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/foto.jpg" class="d-block mx-auto" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/foto.jpg" class="d-block mx-auto" alt="">
+                            </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                     <div class="slide__container row justify-content-center text-start">
                         <div class="slide_item col-md-3 col-lg-2">
@@ -153,8 +169,8 @@
                 </div>
             </div>
         </section>
-        
-        <section class="price" id="price">
+
+        <section class="price section">
             <div class="price__container container">
                 <div class="row justify-content-center text-center">
                     <div class="col-10">
@@ -188,23 +204,23 @@
                             </select>
                             <hr>
                             <div class="calc">
-                               <div class="days">
-                                   <p class="text">Сроки</p>
-                                   <p class="digit">0</p>
-                                   <div class="clear"></div>
-                               </div>
-                               <div class="stoimost">
-                                   <p class="text">Стоимость</p>
-                                   <p class="digit">0</p>
-                                   <div class="clear"></div>
-                               </div>
+                                <div class="days">
+                                    <p class="text">Сроки</p>
+                                    <p class="digit">0</p>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="stoimost">
+                                    <p class="text">Стоимость</p>
+                                    <p class="digit">0</p>
+                                    <div class="clear"></div>
+                                </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <section class="stat">
             <div class="stat__container container">
                 <h2>НЕМНОГО СТАТИСТИКИ</h2>
@@ -217,7 +233,7 @@
                     </div>
                     <div class="stat_item col-12 col-sm-6 col-md-3 mt-5 mt-sm-0">
                         <img src="img/skobki.png" alt="">
-                        <h3 class="count" data-value="4,600">4,600</h3>
+                        <h3 class="count" data-value="4.600">4600</h3>
                         <p>ЧАСОВ РАБОТЫ</p>
                     </div>
                     <div class="stat_item col-12 col-sm-6 col-md-3 mt-5 mt-md-0">
@@ -233,9 +249,9 @@
                 </div>
             </div>
         </section>
-        
-        <section class="review" id="review">
-            <div class="review__container container">
+
+        <section class="review section">
+                     <div class="review__container container">
                 <div class="row justify-content-center">
                     <div class="col-12 ol-sm-6 col-md-3 text-center">
                         <h2>ОТЗЫВЫ</h2>
@@ -245,8 +261,6 @@
                 <img class="d-block mx-auto" src="img/foto_rev.png" alt="">
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-12 col-md-11 col-lg-8 text-center text-md-center">
-                        <!--   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nulla, quidem facilis. Ipsum eveniet iure distinctio nisi voluptatibus repellat ullam fuga voluptates veniam quos deleniti ut, earum recusandae, quasi asperiores.</p>
-               <p><strong>Михаил</strong>, Ген директор ПАО "Газпром".</p>-->
                         <figure class="text-center">
                             <blockquote class="blockquote">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nulla, quidem facilis. Ipsum eveniet iure distinctio nisi voluptatibus repellat ullam fuga voluptates veniam quos deleniti ut, earum recusandae, quasi asperiores.</p>
@@ -266,10 +280,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </section>
 
-        <section class="contacts" id="contacts">
+        <section class="contacts section">
             <div class="contacts__container container justify-content-center">
                 <h2>МОИ КОНТАКТЫ</h2>
                 <hr>
@@ -321,7 +335,7 @@
                 </div>
             </div>
 
-<!--         <div class="row justify-content-center">
+            <!--         <div class="row justify-content-center">
             <div class="col-md-5 pb-2">
                  <div class="social">
                    <img src="img/fb.png" alt="">
@@ -341,7 +355,7 @@
 
         <footer>Copyright 2022 Александр Design by Web</footer>
     </main>
-    <script src="js/jQuery-v3.6.0.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/preloader.js"></script>
     <script src="js/myScript.js"></script>
