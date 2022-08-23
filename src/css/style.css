@@ -68,8 +68,8 @@ nav{
     text-decoration: none;
 }
 
-.menu li a.active{
-    color: brown;
+.menu li a.active {
+    color: brown !important;
 }
 
 .menu li a:visited{
@@ -552,6 +552,23 @@ main{
 .dot img{
     float: left;
     margin-top: 54px;
+}
+
+.carousel{
+    padding-bottom: 50px;
+}
+
+.carousel-indicators [data-bs-target]{
+    background-color: silver;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.carousel-indicators .active{
+    background-color: orange;
 }
 
 .contacts{
