@@ -238,6 +238,10 @@ main{
 .element-animation.element-show{
     opacity: 1;
     transition: opacity 1s;
+    
+    -webkit-animation: h2 2s ease forwards;
+    -o-animation: h2 2s ease forwards;
+    animation: h2 2s ease forwards;
 }
 
 .whatcan{
