@@ -38,9 +38,9 @@ nav{
     color: #fff;
     line-height: 60px;
     float: left;
-    -webkit-animation: comming 2s ease;
-    -o-animation: comming 2s ease;
-    animation: comming 2s ease;
+    -webkit-animation: comming 3s ease;
+    -o-animation: comming 3s ease;
+    animation: comming 3s ease;
 }
 
 .menu{
@@ -229,6 +229,15 @@ main{
 
 .about__container input:active{
     transform: scale(1.1);
+}
+
+.element-animation{
+     opacity: 0;
+}
+
+.element-animation.element-show{
+    opacity: 1;
+    transition: opacity 1s;
 }
 
 .whatcan{
@@ -443,6 +452,7 @@ main{
 
 .stat__container{
     padding-bottom: 96px;
+    opacity: 0;
 }
 
 .stat__container h2{
@@ -475,7 +485,7 @@ main{
     opacity: 0;
 }
 
-.stat_conteiner {
+.stat__conteiner {
     margin: 0 auto;
 }
 
@@ -547,11 +557,6 @@ main{
     -webkit-animation: p 3s ease forwards;
     -o-animation: p 3s ease forwards;
     animation: p 3s ease forwards;
-}
-
-.dot img{
-    float: left;
-    margin-top: 54px;
 }
 
 .carousel{

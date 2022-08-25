@@ -1,5 +1,6 @@
 $(document).ready(function () {
-
+    
+    //калькулятор
     function calculate() {
         let sum = parseInt($("#select1 option:selected").val()) + parseInt($("#select2 option:selected").val()) + parseInt($("#select3 option:selected").val());
         let days = parseInt($("#select1 option:selected").attr("days")) + parseInt($("#select2 option:selected").attr("days")) + parseInt($("#select3 option:selected").attr("days"));
@@ -11,6 +12,7 @@ $(document).ready(function () {
     });
     calculate();
 
+    //плавный скролл якорей
     $(window).scroll(() => {
         let scrollDistance = $(window).scrollTop();
 
@@ -25,26 +27,16 @@ $(document).ready(function () {
             }
         });
     });
-
+    
+    //якоря
     $('a[href^="#"]').click(function () {
         let anchor = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(anchor).offset().top
         }, 600);
     });
-
-        var windowHeight = $(window).height();
-
-        $(document).on('scroll', function () {
-            $('.section').each(function () {
-                var self = $(this),
-                    height = self.offset().top + self.height() / 2 - windowHeight / 2;
-                if ($(document).scrollTop() >= height) {
-                    self.addClass('green');
-                }
-            });
-        });
     
+        //анимация при скролле
         let options = {
             threshold: [0.5]
         };
@@ -63,11 +55,33 @@ $(document).ready(function () {
                 }
             });
         }
-    
+        //модальное окно в кейсах
         $('.image-link').magnificPopup({type:'image'});
+    
+        //загрузка картинок при скролле
+        let optionsImg = {
+            threshold: [0.5]
+        };
+        let observerImg = new IntersectionObserver(onEntryImg, optionsImg);
+        let elementsImg = $('.lazy_image');
+
+        elementsImg.each((i, el) => {
+            observerImg.observe(el);
+        });
+
+
+        function onEntryImg(entry) {
+            entry.forEach(change => {
+                if (change.isIntersecting) {
+                    change.target.src = change.target.dataset.src;
+                }
+            });
+        }
+    
+    
 });
 
-
+//бегающие цифры
 $('.count').each(function () {
     $(this).prop('counter',0).animate({
         Counter: $(this).text()
